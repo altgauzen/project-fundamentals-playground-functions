@@ -16,18 +16,31 @@ function calcArea(base, height) {
 calcArea(51, 1);
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(sentence) {
+  let arraySentence = [];
+  //for (index = 0; index < sentence.lenght; index += 1) {
+    arraySentence = sentence.split(' ');
+    //returne arraySentence;
+  return arraySentence;
 }
+console.log(splitSentence('vamo que vamo'))
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolilo']))
 
 // Desafio 5
 function footballPoints() {
-  // seu código aqui
+  //variavel numero de vitorias 
+  let wins;
+  // receba numero de vitorias
+  // variavel numero de empates
+  let ties;
+  //receba numero de empates
+  // retorne quantidade de pontos que o time marcou
+  return footballPoints;
 }
 
 // Desafio 6
