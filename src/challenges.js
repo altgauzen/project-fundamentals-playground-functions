@@ -18,18 +18,20 @@ calcArea(51, 1);
 // Desafio 3
 function splitSentence(sentence) {
   let arraySentence = [];
-  //for (index = 0; index < sentence.lenght; index += 1) {
     arraySentence = sentence.split(' ');
-    //returne arraySentence;
-  return arraySentence;
+    return arraySentence;
 }
-console.log(splitSentence('vamo que vamo'))
+splitSentence('vamo que vamo');
 
 // Desafio 4
 function concatName(array) {
-  
+  let firstItem = array[0];
+  let lastItem = array[array.length - 1];
+  let string = lastItem + ', ' + firstItem;
+  return string;
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolilo']))
+concatName(['foguete', 'não', 'tem', 'ré']);
+//console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolilo']));
 
 // Desafio 5
 function footballPoints() {
