@@ -58,13 +58,21 @@ function highestCount(numbersArray) {
 console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
 // Desafio 7
+
 function catAndMouse(mouse, cat1, cat2) {
-  let distanceCat1
-  let distanceCat2
-
-  // seu código aqui
+  let distanceCat1 = mouse - cat1;
+  let distanceCat2 = mouse - cat2;
+  if (Math.abs(distanceCat1) > Math.abs(distanceCat2)) {
+    return 'cat2';
+  } else if (Math.abs(distanceCat1) < Math.abs(distanceCat2)) {
+    return 'cat1';
+  } else {
+    return 'os gatos trombam e o rato foge';
+  }
 }
+console.log(catAndMouse(1, 0, 2));
 
+/*
 // Desafio 8
 function fizzBuzz(array) {
   let returnArray = [];
@@ -84,11 +92,17 @@ function fizzBuzz(array) {
 console.log(fizzBuzz([7, 9]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+
+function encode(string) {
+  let codigo = {a:1, e:2, i:3, o:4, u:5};
+  let encodeString = '';
+  for (let key in string)
+  if 
 }
+console.log('hi, there')
+
 function decode() {
-  // seu código aqui
+
 }
 
 module.exports = {
@@ -103,3 +117,4 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+*/
