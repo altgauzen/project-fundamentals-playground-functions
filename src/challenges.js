@@ -31,19 +31,13 @@ function concatName(array) {
   return string;
 }
 concatName(['foguete', 'não', 'tem', 'ré']);
-//console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolilo']));
 
 // Desafio 5
-function footballPoints() {
-  //variavel numero de vitorias 
-  let wins;
-  // receba numero de vitorias
-  // variavel numero de empates
-  let ties;
-  //receba numero de empates
-  // retorne quantidade de pontos que o time marcou
-  return footballPoints;
+function footballPoints(wins, ties) {
+  let points = (wins * 3) + ties;
+  return points;
 }
+console.log(footballPoints(1, 2));
 
 // Desafio 6
 function highestCount() {
