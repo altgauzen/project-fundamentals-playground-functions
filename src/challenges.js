@@ -57,15 +57,15 @@ function highestCount(numbersArray) {
 }
 console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
-// Desafio 7
+// Desafio 7 - NAO PASSOU NO TESTE MAS NAO SEI PQ (npm test catAndMouse)
 
 function catAndMouse(mouse, cat1, cat2) {
-  let distanceCat1 = mouse - cat1;
-  let distanceCat2 = mouse - cat2;
-  if (Math.abs(distanceCat1) > Math.abs(distanceCat2)) {
-    return 'cat2';
-  } else if (Math.abs(distanceCat1) < Math.abs(distanceCat2)) {
+  let distanceCat1 = Math.abs(mouse - cat1);
+  let distanceCat2 = Math.abs(mouse - cat2);
+  if (distanceCat1 < distanceCat2) {
     return 'cat1';
+  } else if (distanceCat2 < distanceCat1) {
+    return 'cat2';
   } else {
     return 'os gatos trombam e o rato foge';
   }
