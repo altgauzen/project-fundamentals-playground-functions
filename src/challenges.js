@@ -1,4 +1,5 @@
 // Desafio 1
+
 function compareTrue(value1, value2) {
   if (value1 === true && value2 === true) {
     return true;
@@ -9,6 +10,7 @@ function compareTrue(value1, value2) {
 compareTrue(true, true);
 
 // Desafio 2
+
 function calcArea(base, height) {
   let area = (base * height) / 2;
    return area;
@@ -16,6 +18,7 @@ function calcArea(base, height) {
 calcArea(51, 1);
 
 // Desafio 3
+
 function splitSentence(sentence) {
   let arraySentence = [];
     arraySentence = sentence.split(' ');
@@ -24,6 +27,7 @@ function splitSentence(sentence) {
 splitSentence('vamo que vamo');
 
 // Desafio 4
+
 function concatName(array) {
   let firstItem = array[0];
   let lastItem = array[array.length - 1];
@@ -33,6 +37,7 @@ function concatName(array) {
 concatName(['foguete', 'não', 'tem', 'ré']);
 
 // Desafio 5
+
 function footballPoints(wins, ties) {
   let points = (wins * 3) + ties;
   return points;
@@ -40,6 +45,7 @@ function footballPoints(wins, ties) {
 console.log(footballPoints(1, 2));
 
 // Desafio 6
+
 function highestCount(numbersArray) {
   let higherNumber = numbersArray[0];
   let counter = 0;
@@ -55,9 +61,9 @@ function highestCount(numbersArray) {
     }
   return counter;
 }
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+highestCount([0, 4, 4, 4, 9, 2, 1]);
 
-// Desafio 7 - NAO PASSOU NO TESTE MAS NAO SEI PQ (npm test catAndMouse)
+// Desafio 7 
 
 function catAndMouse(mouse, cat1, cat2) {
   let distanceCat1 = Math.abs(mouse - cat1);
@@ -70,10 +76,10 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'os gatos trombam e o rato foge';
   }
 }
-console.log(catAndMouse(1, 0, 2));
+(catAndMouse(1, 0, 2));
 
-/*
 // Desafio 8
+
 function fizzBuzz(array) {
   let returnArray = [];
   for (let index = 0; index < array.length; index += 1) {
@@ -96,8 +102,6 @@ console.log(fizzBuzz([7, 9]));
 function encode(string) {
   let codigo = {a:1, e:2, i:3, o:4, u:5};
   let encodeString = '';
-  for (let key in string)
-  if 
 }
 console.log('hi, there')
 
@@ -117,4 +121,3 @@ module.exports = {
   highestCount,
   splitSentence,
 };
-*/
