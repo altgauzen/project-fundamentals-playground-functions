@@ -13,7 +13,7 @@ compareTrue(true, true);
 
 function calcArea(base, height) {
   let area = (base * height) / 2;
-   return area;
+  return area;
 }
 calcArea(51, 1);
 
@@ -21,8 +21,8 @@ calcArea(51, 1);
 
 function splitSentence(sentence) {
   let arraySentence = [];
-    arraySentence = sentence.split(' ');
-    return arraySentence;
+  arraySentence = sentence.split(' ');
+  return arraySentence;
 }
 splitSentence('vamo que vamo');
 
@@ -51,7 +51,7 @@ function highestCount(numbersArray) {
   let counter = 0;
     for (let index = 0; index < numbersArray.length; index += 1) {
       if (higherNumber < numbersArray[index]) {
-        higherNumber = numbersArray[index] 
+        higherNumber = numbersArray[index];
       }
     }
     for (index of numbersArray) {
