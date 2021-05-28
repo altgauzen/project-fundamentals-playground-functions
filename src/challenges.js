@@ -3,11 +3,11 @@
 function compareTrue(value1, value2) {
   if (value1 === true && value2 === true) {
     return true;
-  //} else {
-  //  return false;
+  } else {
+    return false;
   }
 }
-console.log(compareTrue(false, true));
+compareTrue(false, true);
 
 // Desafio 2
 
@@ -100,10 +100,23 @@ console.log(fizzBuzz([7, 9]));
 // Desafio 9
 
 function encode(string) {
-  let codigo = {a:1, e:2, i:3, o:4, u:5};
   let encodeString = '';
+  for (let index = 0; index < string.length; index +=1) {
+    if (string[index] === 'a') {
+      encodeString += encodeString.replace(/a/gi, '1');
+    } else if (string[index] === 'e') {
+      encodeString += encodeString.replace(/e/gi, '2');
+    } else if (string[index] === 'i') {
+      encodeString += encodeString.replace(/i/gi, '3');
+    } else if (string[index] === 'o') {
+      encodeString += encodeString.replace(/o/gi, '4');
+    } else if (string[index] === 'u') {
+      encodeString += encodeString.replace(/u/gi, '5');
+    }
+  }
+  return encodeString;
 }
-console.log('hi, there')
+console.log(encode('hi, there'));
 
 function decode() {
 
