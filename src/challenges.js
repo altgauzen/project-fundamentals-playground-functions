@@ -54,7 +54,7 @@ function highestCount(numbersArray) {
     higherNumber = numbersArray[index];
     }
   }
-  for (index of numbersArray) {
+  for (let index of numbersArray) {
     if (index === higherNumber) {
     counter += 1;
     }
@@ -83,10 +83,10 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(array) {
   let returnArray = [];
   for (let index = 0; index < array.length; index += 1) {
-    if ((array[index] % 3 == 0) && (array[index] % 5 == 0)) {
+    if ((array[index] % 3 === 0) && (array[index] % 5 === 0)) {
         returnArray[index] = ('fizzBuzz');
-    } else if ((array[index] % 3 != 0) && (array[index] % 5 == 0)) {
-        returnArray[index] = ('buzz');
+    } else if ((array[index] % 3 !== 0) && (array[index] % 5 === 0)) {
+      returnArray[index] = ('buzz');
     } else if ((array[index] % 3 === 0) && (array[index] % 5 !== 0)) {
       returnArray[index] = ('fizz');
     } else {
