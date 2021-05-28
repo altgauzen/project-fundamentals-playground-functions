@@ -51,19 +51,19 @@ function highestCount(numbersArray) {
   let counter = 0;
   for (let index = 0; index < numbersArray.length; index += 1) {
     if (higherNumber < numbersArray[index]) {
-    higherNumber = numbersArray[index];
+      higherNumber = numbersArray[index];
     }
   }
   for (let index of numbersArray) {
     if (index === higherNumber) {
-    counter += 1;
+      counter += 1;
     }
   }
   return counter;
 }
 highestCount([0, 4, 4, 4, 9, 2, 1]);
 
-// Desafio 7 
+// Desafio 7
 
 function catAndMouse(mouse, cat1, cat2) {
   let distanceCat1 = Math.abs(mouse - cat1);
@@ -84,7 +84,7 @@ function fizzBuzz(array) {
   let returnArray = [];
   for (let index = 0; index < array.length; index += 1) {
     if ((array[index] % 3 === 0) && (array[index] % 5 === 0)) {
-        returnArray[index] = ('fizzBuzz');
+      returnArray[index] = ('fizzBuzz');
     } else if ((array[index] % 3 !== 0) && (array[index] % 5 === 0)) {
       returnArray[index] = ('buzz');
     } else if ((array[index] % 3 === 0) && (array[index] % 5 !== 0)) {
