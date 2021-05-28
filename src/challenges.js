@@ -87,10 +87,10 @@ function fizzBuzz(array) {
         returnArray[index] = ('fizzBuzz');
     } else if ((array[index] % 3 != 0) && (array[index] % 5 == 0)) {
         returnArray[index] = ('buzz');
-    } else if ((array[index] % 3 == 0) && (array[index] % 5 != 0)) {
-        returnArray[index] = ('fizz');
+    } else if ((array[index] % 3 === 0) && (array[index] % 5 !== 0)) {
+      returnArray[index] = ('fizz');
     } else {
-        returnArray[index] = ('bug!');
+      returnArray[index] = ('bug!');
     }
   }
   return returnArray;
@@ -101,24 +101,23 @@ console.log(fizzBuzz([7, 9]));
 
 function encode(string) {
   let encodeString = string.replace(/a/gi, '1')
-  .replace(/e/gi, '2')
-  .replace(/i/gi, '3')
-  .replace(/o/gi, '4')
-  .replace(/u/gi, '5');
+    .replace(/e/gi, '2')
+    .replace(/i/gi, '3')
+    .replace(/o/gi, '4')
+    .replace(/u/gi, '5');
   return encodeString;
 }
-console.log(encode('hi, there!'));
+encode('hi, there!');
 
 function decode(string) {
   let decodeString = string.replace(/1/gi, 'a')
-  .replace(/2/gi, 'e')
-  .replace(/3/gi, 'i')
-  .replace(/4/gi, 'o')
-  .replace(/5/gi, 'u');
+    .replace(/2/gi, 'e')
+    .replace(/3/gi, 'i')
+    .replace(/4/gi, 'o')
+    .replace(/5/gi, 'u');
   return decodeString;
 }
-console.log(decode('h3 th2r2!'));
-
+decode('h3 th2r2!');
 
 module.exports = {
   calcArea,
