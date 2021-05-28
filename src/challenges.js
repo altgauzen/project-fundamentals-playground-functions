@@ -3,11 +3,11 @@
 function compareTrue(value1, value2) {
   if (value1 === true && value2 === true) {
     return true;
-  } else {
-    return false;
+  //} else {
+  //  return false;
   }
 }
-compareTrue(true, true);
+console.log(compareTrue(false, true));
 
 // Desafio 2
 
@@ -49,16 +49,16 @@ console.log(footballPoints(1, 2));
 function highestCount(numbersArray) {
   let higherNumber = numbersArray[0];
   let counter = 0;
-    for (let index = 0; index < numbersArray.length; index += 1) {
-      if (higherNumber < numbersArray[index]) {
-        higherNumber = numbersArray[index];
-      }
+  for (let index = 0; index < numbersArray.length; index += 1) {
+    if (higherNumber < numbersArray[index]) {
+    higherNumber = numbersArray[index];
     }
-    for (index of numbersArray) {
-      if (index === higherNumber) {
-        counter += 1;
-      }
+  }
+  for (index of numbersArray) {
+    if (index === higherNumber) {
+    counter += 1;
     }
+  }
   return counter;
 }
 highestCount([0, 4, 4, 4, 9, 2, 1]);
