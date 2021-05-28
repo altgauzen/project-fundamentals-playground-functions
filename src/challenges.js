@@ -101,6 +101,7 @@ console.log(fizzBuzz([7, 9]));
 
 function encode(string) {
   let encodeString = '';
+  //usar o match
   for (let index = 0; index < string.length; index +=1) {
     if (string[index] === 'a') {
       encodeString += encodeString.replace(/a/gi, '1');
