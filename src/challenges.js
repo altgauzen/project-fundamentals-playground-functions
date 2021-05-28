@@ -100,28 +100,25 @@ console.log(fizzBuzz([7, 9]));
 // Desafio 9
 
 function encode(string) {
-  let encodeString = '';
-  //usar o match
-  for (let index = 0; index < string.length; index +=1) {
-    if (string[index] === 'a') {
-      encodeString += encodeString.replace(/a/gi, '1');
-    } else if (string[index] === 'e') {
-      encodeString += encodeString.replace(/e/gi, '2');
-    } else if (string[index] === 'i') {
-      encodeString += encodeString.replace(/i/gi, '3');
-    } else if (string[index] === 'o') {
-      encodeString += encodeString.replace(/o/gi, '4');
-    } else if (string[index] === 'u') {
-      encodeString += encodeString.replace(/u/gi, '5');
-    }
-  }
+  let encodeString = string.replace(/a/gi, '1')
+  .replace(/e/gi, '2')
+  .replace(/i/gi, '3')
+  .replace(/o/gi, '4')
+  .replace(/u/gi, '5');
   return encodeString;
 }
-console.log(encode('hi, there'));
+console.log(encode('hi, there!'));
 
-function decode() {
-
+function decode(string) {
+  let decodeString = string.replace(/1/gi, 'a')
+  .replace(/2/gi, 'e')
+  .replace(/3/gi, 'i')
+  .replace(/4/gi, 'o')
+  .replace(/5/gi, 'u');
+  return decodeString;
 }
+console.log(decode('h3 th2r2!'));
+
 
 module.exports = {
   calcArea,
