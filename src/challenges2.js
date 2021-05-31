@@ -13,11 +13,12 @@ A saída da sua função deve ser uma lista de objetos ordenada pelo campo tech 
 */
 function techList(arrayTech, name) {
   let techObject = [];
-    if (arrayTech.sort() === 0) {
+  let arrayInOrder = arrayTech.sort();
+    if (arrayInOrder === 0) {
       return 'Vazio!';
     } else {
-      for (let index = 0; index < arrayTech.length; index += 1)  {
-        techObject.push({tech:arrayTech[index], name:name});
+      for (let index = 0; index < arrayInOrder.length; index += 1) {
+        techObject.push({tech:arrayInOrder[index], name:name});
       }
     }  
   return techObject;
