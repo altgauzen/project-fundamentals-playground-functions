@@ -98,7 +98,8 @@ function fizzBuzz(array) {
 console.log(fizzBuzz([7, 9]));
 
 // Desafio 9
-
+// Para este desafio busquei ajuda no search do slack e encontrei a luz
+//no código do colega Jonathan Souza da Turma 10 B
 function encode(string) {
   let encodeString = string.replace(/a/gi, '1')
     .replace(/e/gi, '2')
