@@ -1,5 +1,5 @@
 // Desafio 10
-/*Crie uma função que recebe um array de nomes de tecnologias que você quer aprender. Essa função deve receber também um segundo parâmetro chamado name com um nome.
+/* Crie uma função que recebe um array de nomes de tecnologias que você quer aprender. Essa função deve receber também um segundo parâmetro chamado name com um nome.
 
 Para cada tecnologia no array, crie um objeto com a seguinte estrutura:
 
@@ -14,13 +14,13 @@ A saída da sua função deve ser uma lista de objetos ordenada pelo campo tech 
 function techList(arrayTech, name) {
   let techObject = [];
   let arrayInOrder = arrayTech.sort();
-    if (arrayInOrder === 0) {
-      return 'Vazio!';
-    } else {
-      for (let index = 0; index < arrayInOrder.length; index += 1) {
-        techObject.push({tech:arrayInOrder[index], name:name});
-      }
-    }  
+  if (arrayInOrder == 0) {
+    return 'Vazio!';
+  } else {
+    for (let index = 0; index < arrayInOrder.length; index += 1) {
+      techObject.push({tech:arrayInOrder[index], name:name});
+    }
+  }  
   return techObject;
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Alexandre'));
