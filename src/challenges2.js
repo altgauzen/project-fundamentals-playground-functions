@@ -18,17 +18,36 @@ function techList(arrayTech, name) {
     return 'Vazio!';
   } else {
     for (let index = 0; index < arrayInOrder.length; index += 1) {
-      techObject.push({tech:arrayInOrder[index], name:name});
+      techObject.push({ tech:arrayInOrder[index], name:name });
     }
-  }  
+  }
   return techObject;
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Alexandre'));
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+function generatePhoneNumber(arrayPhoneNumber) {
+  let objPhoneNumber = {};
+  //objPhoneNumber.0 = 
+  objPhoneNumber.prop = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  console.log(objPhoneNumber);
+  let phoneNumber = (' ');
+  if (arrayPhoneNumber.length != 11) {
+    return 'Array com tamanho incorreto.';
+  } else if (arrayPhoneNumber){
+
+  }
+  
+  {
+    for (let index = 0; index < arrayPhoneNumber.length; index += 1) {
+      
+      
+      objPhoneNumber += (arrayPhoneNumber[index]);
+    }
+  }
+  return objPhoneNumber;
 }
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
 function triangleCheck() {
