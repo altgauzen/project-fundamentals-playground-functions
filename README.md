@@ -1,7 +1,26 @@
-### Termos e acordos
+# project-fundamentals-playground-functions
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
+## Meus Comentários
 
+Este foi um projeto individual feito na Trybe no Módulo de Fundamentos onde implementei funções JavaScript a partir de requisitos.
+
+Aprendí neste Projeto a: 
+ - Escrever códigos em JavaScript que usam variáveis e tipos primitivos;
+ - Utilizar conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos/de atribuição no seu código;
+ - Criar códigos que usam estruturas condicionais, como o if/else ;
+ - Manipular arrays (listas);
+ - Utilizar o comando for;
+ - Quebrar grandes problemas em pequenos;
+ - Utilizar a lógica de programação na resolução de problemas;
+ - Manipular objetos;
+ - Utilizar o comando for/in;
+ - Utilizar funções para organizar e estruturar o seu código.
+
+---
+
+Aproveitamento: 100% de aprovação pelos avaliadores da Trybe.
+
+---
 # Boas vindas ao repositório do Projeto Playground Functions!
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Atenção a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #VQV 🚀
